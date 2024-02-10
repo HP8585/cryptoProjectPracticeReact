@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.one_two{
+    @apply flex flex-col gap-4
+}
+.TSContainer{
+    @apply opacity-0 translate-y-80 duration-1000
+}
+.TSContainer.active{
+    @apply opacity-100 translate-y-0
+}
+.slOne{
+    @apply bg-gradient-to-b from-blue-900 to-blue-950 relative flex items-center px-8 py-12 rounded-3xl overflow-hidden
+}
+.slOne .headText{
+    @apply flex flex-col gap-2 font-bold text-[22px]
+}
+.slTwo{
+    @apply flex flex-col gap-5 rounded-3xl
+    bg-gradient-to-b from-blue-900 to-blue-950 px-8 py-10
+}
+.slTwo .headText{
+    @apply flex flex-col gap-1
+}
+.slTwo .headText .alert{
+    @apply text-blue-500 text-[22px] font-bold
+}
+.slTwo .headText .notify{
+    @apply max-w-72 font-bold text-[22px]
+}
+
+.slTwo ul {
+    @apply flex flex-col gap-0
+}
+.slTwo ul > li{
+@apply flex justify-between items-center cursor-pointer
+px-1 py-4 hover:bg-slate-400 hover:bg-opacity-15 duration-100
+}
+.slTwo ul > li:not(:last-child){
+    @apply border-b pb-3 border-slate-600
+}
+.slTwo ul > li .name_icon{
+@apply flex flex-row-reverse gap-2
+}
+.slTwo ul > li .price_change{
+    @apply flex flex-col items-end
+}
+.slTwo ul > li .price{
+    @apply text-lg font-semibold
+}
+
+.slThree{
+    @apply flex flex-col gap-5 rounded-3xl relative overflow-hidden
+    bg-gradient-to-b from-blue-900 to-blue-950 px-8 py-10
+}
+.slThree .headText{
+    @apply flex flex-col gap-1 font-bold
+}
+
+.slThree .headText .grow{
+    @apply max-w-96 font-bold text-[22px]
+}
+
+.slFour{
+    @apply bg-gradient-to-b from-blue-900 to-blue-950 relative
+    font-bold flex items-center px-8 py-5 rounded-3xl overflow-hidden
+}
+.slFour .generate{
+    @apply max-w-48 text-wrap text-[22px]
+}
+.slFour .on{
+    @apply text-blue-500 text-[22px]
+}
+.slThree .headText .recur{
+    @apply text-blue-500 text-[22px] font-bold
+}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.coinPageContainer{
+    @apply w-fit mx-auto py-10
+}
+.coinPageContainer .name_symbol{
+    @apply flex items-center gap-2 mb-6
+}
+.coinPageContainer .name_symbol div{
+    @apply flex gap-2 items-center
+}
+.coinPageContainer .name_symbol .name{
+    @apply text-2xl font-semibold
+}
+.coinPageContainer .name_symbol .symbol{
+    @apply text-slate-500
+}
+.coinPageContainer .chartC{
+    @apply flex flex-col gap-8 text-slate-400
+}

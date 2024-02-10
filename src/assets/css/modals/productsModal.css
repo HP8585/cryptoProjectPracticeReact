@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.PMContainer{
+    @apply bg-white text-black absolute top-20 p-6 rounded
+}
+.PMContainer ul {
+    @apply flex flex-col items-start
+}
+.PMContainer ul > li{
+    @apply flex flex-col items-start border-l-4 px-3 border-blue-600
+}
+.PMContainer ul > li p{
+    @apply max-w-52 text-sm text-black 
+}
+.PMContainer ul h1{
+    @apply text-blue-700 font-bold capitalize
+}
+.PMContainer ul h3{
+    @apply text-black font-bold
+}

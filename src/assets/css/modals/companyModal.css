@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.CMContainer{
+    @apply bg-white text-black absolute top-20 p-6 rounded
+    flex gap-12 
+}
+.CMContainer h1.about{
+    @apply text-4xl text-slate-400 opacity-80 font-bold
+}
+.CMContainer ul {
+    @apply grid grid-cols-2 items-start
+}
+.CMContainer ul > li{
+    @apply flex flex-col items-start border-l-4 px-3 border-blue-600
+}
+.CMContainer ul > li p{
+    @apply max-w-52 text-sm text-black 
+}
+.CMContainer ul h1{
+    @apply text-blue-700 font-bold capitalize
+}
+.CMContainer ul h3{
+    @apply text-black font-bold
+}

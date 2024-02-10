@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.FSContainer{
+    @apply w-fit mx-auto py-44 flex flex-col items-center
+    gap-4
+}
+.FSContainer h1{
+    @apply text-[40px] lg:text-6xl font-semibold text-center
+}
+.FSContainer .Buy{
+    @apply text-gray-300 font-semibold text-3xl my-4 lg:text-start text-center
+}
+.FSContainer ul{
+    @apply flex flex-col gap-2
+}
+.FSContainer ul > li{
+    @apply flex items-center gap-2 text-lg font-semibold
+}
+.FSContainer ul > li > .assurances > span{
+    @apply text-blue-500 text-xl
+}
+.FSContainer ul > li i{
+    @apply bg-blue-500 px-1 py-1
+    rounded-full
+}
+.FSContainer ul small{
+    @apply text-slate-400 text-[1.05rem] ml-8
+}
+.FSContainer button.download{
+    @apply border flex items-center px-2 py-2 rounded-full
+    gap-3 text-xl font-semibold my-10
+}
+
+.FSContainer .phoneContainer{
+    @apply relative duration-1000 translate-y-80 opacity-0 h-fit;
+}
+.FSContainer .phoneContainer .abstract{
+    @apply bg-transparent w-72 lg:w-[26em] h-[35em] z-[-1]
+    absolute left-1/2 -translate-x-1/2 top-1/2
+    -translate-y-1/2 rounded-full;
+    box-shadow: 0 0 1000em #1d4ed8;
+}
+.FSContainer img.phoneHero{
+    @apply w-[30em] z-20 rounded-3xl overflow-hidden ;
+
+}
+.FSContainer .phoneContainer.active{
+    @apply translate-y-0 opacity-100
+}

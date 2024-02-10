@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.SSContainer{
+    @apply py-10 w-fit mx-auto 
+}
+.SSContainer .fake{
+ @apply flex flex-col justify-center gap-12 opacity-0 duration-1000 translate-y-80
+}
+.SSContainer .fake.active{
+    @apply translate-y-0 opacity-100
+}
+.SSContainer .fake .headText{
+    @apply text-center flex flex-col gap-4
+}
+.SSContainer .fake .headText span{
+    @apply text-blue-500 font-semibold text-lg text-wrap
+}
+.SSContainer .fake .headText h1{
+    @apply text-2xl lg:text-6xl lg:w-[14em] font-bold
+}
+.SSContainer .fake .checkB{
+    @apply border relative w-fit rounded-full text-xl font-semibold
+    flex items-center gap-2 py-2 px-4 mx-auto
+}
+
+.SSContainer .fake .coinsList{
+    @apply flex flex-col gap-3 
+}
+
+.SSContainer .fake .coinsList > li{
+    @apply flex justify-between items-center border-b pb-3
+    border-slate-700
+}
+.SSContainer .fake .coinsList > li > div{
+    @apply flex gap-3
+}
+.SSContainer .fake .coinsList > li .more{
+    @apply bg-white text-black px-6 py-1.5 rounded-full text-lg
+    font-semibold cursor-pointer hover:bg-transparent hover:text-white
+    border hover:border-blue-500 max-h-10 max-w-[5.2em] overflow-hidden
+}
+.SSContainer .fake .coinsList .name_symbol{
+    @apply flex lg:flex-row flex-col gap-0 items-center text-lg text-slate-500
+}
+.SSContainer .coinsList .name{
+    @apply text-2xl font-bold text-slate-400 truncate max-w-56
+}
+.SSContainer .coinsList .price{
+    @apply lg:text-3xl text-xl
+}
+.SSContainer .coinsList .change{
+    @apply text-[1.1rem] font-semibold hidden lg:block
+}
+.SSContainer .coinsList .change2{
+    @apply text-[1rem] font-semibold block lg:hidden
+}
+.SSContainer .coinsList .marketCap{
+    @apply text-lg font-semibold ml-2 hidden lg:block
+}
+/* .SSContainer .coinsList .symbol{
+    @apply hidden lg:block
+} */

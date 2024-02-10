@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-pagination-bullet{
+    @apply bg-[#2563eb]
+}
+
+.title{
+    @apply absolute bottom-10 left-6 font-semibold text-2xl;
+    text-shadow: 0 0 10px black;
+}
+.img{
+    @apply w-full h-full object-cover
+}
